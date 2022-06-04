@@ -25,6 +25,29 @@ body{
     font-size: 2.0rem;
 }
 .input:hover{
-    border: 3px solid rgba(0, 0, 0, 0.164);
-    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    box-shadow: inset 0px 1px 4px 0px black;
 }
+
+.operadores div {
+    display: inline-block;
+    border: 3px solid rgba(0, 0, 0, 0.164);
+    border-radius: 3px;
+    width: 47px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 5px 15px 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.404);
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
+  
+  .operadores div:hover {
+    background-color: rgba();
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.404);
+    border-color: black;
+  }
+  
+  .operadores div:active {
+    font-weight: bold;
+  }
