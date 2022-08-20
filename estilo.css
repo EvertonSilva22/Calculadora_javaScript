@@ -13,11 +13,13 @@ body{
     font-size: 1.6rem;
 }
 .calculadora{
-    padding: 20px;
+    padding: 15px;
     border-radius: 3px;
     box-shadow: 0px 1px 5px 0px blue;
+    background-color: rgba(0, 0, 0, 0.89);
 }
 .input{
+    background-color: rgb(36, 121, 36);
     border: 3px solid rgba(0, 0, 0, 0.404);
     border-radius: 5px;
     height: 50px;
@@ -29,16 +31,31 @@ body{
     box-shadow: inset 0px 1px 4px 0px black;
 }
 
-.operadores div {
-    display: inline-block;
+.mrc div{
+  display: inline-block;
     border: 3px solid rgba(0, 0, 0, 0.164);
-    border-radius: 3px;
+    border-radius: 30px;
     width: 47px;
     text-align: center;
     padding: 10px;
     margin: 15px 5px 15px 0;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgb(245, 245, 24);
+    color: white;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operadores div {
+    display: inline-block;
+    border: 3px solid rgba(0, 0, 0, 0.164);
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 5px 15px 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   }
   
@@ -56,12 +73,13 @@ body{
     display: inline-block;
     border: 3px solid rgba(0, 0, 0, 0.404);
     border-radius: 1px;
-    width: 80px;
+    width: 50px;
     text-align: center;
     padding: 10px;
     margin: 10px 4px 10px 0;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.164);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.884);
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   }
   
@@ -74,12 +92,22 @@ body{
   .numeros div:active {
     font-weight: bold;
   }
+
+  #teste{
+    margin-top: -73px;
+  }
+
+  #plus{
+    background-color: #07cebd;
+    height: 105px;
+    
+  }
   
   div.equal {
     display: inline-block;
     border: 3px solid #3079ED;
     border-radius: 1px;
-    width: 20%;
+    width: 50px;
     text-align: center;
     padding: 10px 10px;
     margin: 10px 6px 10px 0;
@@ -102,8 +130,15 @@ body{
 
   #limpar{
     border: 3px solid #3079ED;
-    color: #FFF;
-    background-color: #4d90fe;
+    color: white;
+    background-color: #07cebd;
+    border-radius: 50%;
+    width: 55px;
+  }
+
+  #limpar p{
+    font-size: 13px;
+    padding: 1px;
   }
 
   #limpar:hover{
