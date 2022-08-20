@@ -93,15 +93,21 @@ body{
     font-weight: bold;
   }
 
-  #teste{
-    margin-top: -73px;
-  }
 
   #plus{
     background-color: #07cebd;
-    height: 105px;
-    font-size: 35px;
+    display: inline-block;
+    border: 3px solid rgba(0, 0, 0, 0.404);
+    border-radius: 1px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    color: white;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   }
+
   
   div.equal {
     display: inline-block;
@@ -133,13 +139,10 @@ body{
     color: white;
     background-color: #07cebd;
     border-radius: 50%;
-    width: 55px;
+    text-transform: uppercase;
+    
   }
 
-  #limpar p{
-    font-size: 13px;
-    padding: 1px;
-  }
 
   #limpar:hover{
     background-color: #307CF9;
